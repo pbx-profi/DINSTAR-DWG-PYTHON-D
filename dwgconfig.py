@@ -8,7 +8,7 @@ income_path = '/var/spool/dwgp/incoming/'                       # SMS income pat
 send_path = '/var/spool/dwgp/send/'                             # SMS send path
 ussd_income_path = '/var/spool/dwgp/ussd_incoming/'             # USSD income path
 ussd_send_path = '/var/spool/dwgp/ussd_send'                    # USSD send path
-run_program = '/etc/local_scripts/radius2.php'                  # External program after receiving SMS
+run_program = '/opt/DINSTAR-DWG-PYTHON-D/mail.php'              # External program after receiving SMS
 debug = True                                                    # On/OFF Debug
 
 pidfile = '/var/run/dwg_server.pid'                             # PID file path (for daemon)
