@@ -7,7 +7,7 @@ password = 'test'                                               # DWG API Passwo
 income_path = '/var/spool/dwgp/incoming/'                       # SMS income path
 send_path = '/var/spool/dwgp/send/'                             # SMS send path
 ussd_income_path = '/var/spool/dwgp/ussd_incoming/'             # USSD income path
-ussd_send_path = '/var/spool/dwgp/ussd_send'                    # USSD send path
+ussd_send_path = '/var/spool/dwgp/ussd_send/'                    # USSD send path
 run_program = '/opt/DINSTAR-DWG-PYTHON-D/mail.php'              # External program after receiving SMS
 debug = True                                                    # On/OFF Debug
 
