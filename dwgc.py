@@ -172,9 +172,14 @@ class DWGD:
             elif body['encoding'] == 1:
                 sms.write(body['content'].decode('utf-16-be'))
             sms.close()
-            Popen(dwgconfig.run_program)
+            #logging.info('SUPERBUG text: %s' % body['content'])
+            data = json.dumps(body)
+            Popen(['php', '-f', dwgconfig.run_program, data])
             logging.info('[DATA] Received SMS from number %s' % body['number'])
         except:
+            #logging.info('SUPERDEBUG text: %s' % body['content'])
+            data = json.dumps(body)
+            Popen(['php', '-f', dwgconfig.run_program, data])
             logging.info('[DATA] Received unknown SMS')
 
     def saveUSSD(self, body):
